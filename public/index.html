@@ -1,456 +1,585 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Syed Waleed Ali | Front-End Developer</title>
-  <link rel="icon" type="image/png" href="Images/me-2.png">
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Syed Waleed Ali | Front-End Developer</title>
+    <link rel="icon" type="image/png" href="Images/me-2.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-logo">LOGO</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+      <a href="#contact" class="btn-hire"
+        >Hire Me <i class="fas fa-arrow-right"></i
+      ></a>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
 
-  <!-- ===== NAVBAR ===== -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-logo">LOGO</div>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact Us</a></li>
-    </ul>
-    <a href="#contact" class="btn-hire">Hire Me <i class="fas fa-arrow-right"></i></a>
-    <div class="hamburger" id="hamburger">
-      <span></span><span></span><span></span>
-    </div>
-  </nav>
-
-  <!-- ===== HERO ===== -->
-  <section class="hero" id="home">
-    <div class="grid-bg"></div>
-    <div class="hero-content">
-      <p class="hero-greeting">Hi, I'm Syed Waleed Ali</p>
-      <h1 class="hero-title">
-        Front-End Developer<br/>
-        High-Performance<br/>
-        Web Interfaces
-      </h1>
-      <p class="hero-desc">
-        I help startups and businesses design and develop fast, responsive,
-        and scalable front-end solutions that deliver real results.
-      </p>
-      <div class="hero-btns">
-        <a href="#projects" class="btn-primary">View Case Studies <i class="fas fa-arrow-right"></i></a>
-        <a href="#" class="btn-outline" download>Download CV <i class="fas fa-download"></i></a>
-      </div>
-    </div>
-    <div class="hero-right">
-      <div class="code-icon-wrap">
-        <div class="code-icon">&lt;/&gt;</div>
-        <div class="dotted-line"></div>
-      </div>
-      <div class="stats-row">
-        <div class="stat-card">
-          <span class="stat-num">2+</span>
-          <span class="stat-label">Years Experience</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-num">20+</span>
-          <span class="stat-label">Projects Delivered</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-num">100+</span>
-          <span class="stat-label">Client Satisfaction</span>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <div class="grid-bg"></div>
+      <div class="hero-content">
+        <p class="hero-greeting">Hi, I'm Syed Waleed Ali</p>
+        <h1 class="hero-title">
+          Front-End Developer<br />
+          High-Performance<br />
+          Web Interfaces
+        </h1>
+        <p class="hero-desc">
+          I build responsive, user-friendly websites and web applications using
+          modern frontend technologies. I specialize in React.js, JavaScript,
+          Next.js, Node.js, MongoDB and WordPress, turning ideas and designs
+          into functional digital experiences.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn-primary"
+            >View Case Studies <i class="fas fa-arrow-right"></i
+          ></a>
+          <a href="#" class="btn-outline" download
+            >Download CV <i class="fas fa-download"></i
+          ></a>
         </div>
       </div>
-    </div>
-    <div class="scroll-dot"></div>
-  </section>
-
-  <!-- ===== ABOUT ===== -->
-  <section class="about" id="about">
-    <div class="about-text">
-      <h2>About Us</h2>
-      <p>I'm a Front-End Developer with a strong focus on performance, accessibility, and modern UI development. I specialize in converting designs into clean, maintainable code while ensuring smooth user experiences across all devices.</p>
-      <p>I collaborate closely with designers, founders, and product teams to deliver front-end solutions that support business growth.</p>
-    </div>
-    <div class="about-img">
-      <div class="img-placeholder">
-        <span><img src="./images/me-2.png" alt="Syed Waleed Ali"/></span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== SERVICES ===== -->
-  <section class="services" id="services">
-    <div class="section-header">
-      <p class="section-tag">What I Offer</p>
-      <h2>My Services</h2>
-    </div>
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="service-icon"><i class="fas fa-code"></i></div>
-        <h3>Web Development</h3>
-        <p>Building fast, responsive, and scalable web applications with clean code.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
-        <h3>UI/UX Design</h3>
-        <p>Crafting beautiful, intuitive interfaces that users love to interact with.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
-        <h3>Responsive Design</h3>
-        <p>Ensuring pixel-perfect experiences across all devices and screen sizes.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><i class="fas fa-rocket"></i></div>
-        <h3>Performance Optimization</h3>
-        <p>Speeding up websites and apps for better user experience and SEO.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== SKILLS & TOOLS ===== -->
-  <section class="skills" id="skills">
-    <div class="section-header">
-      <h2>Skills &amp; Tools</h2>
-    </div>
-    <div class="skills-tabs">
-      <button class="tab-btn active" data-filter="coding">coding</button>
-      <button class="tab-btn" data-filter="wordpress">WordPress</button>
-      <button class="tab-btn" data-filter="tools">Tools</button>
-      <button class="tab-btn" data-filter="ai">Ai</button>
-    </div>
-    <div class="skills-icon-grid">
-
-      <!-- CODING -->
-      <div class="skill-icon-card" data-cat="coding">
-        <div class="sic-inner">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"/>
+      <div class="hero-right">
+        <div class="code-icon-wrap">
+          <div class="code-icon">&lt;/&gt;</div>
+          <div class="dotted-line"></div>
         </div>
-        <span>HTML5</span>
-      </div>
-      <div class="skill-icon-card" data-cat="coding">
-        <div class="sic-inner">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"/>
-        </div>
-        <span>CSS3</span>
-      </div>
-      <div class="skill-icon-card" data-cat="coding">
-        <div class="sic-inner">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"/>
-        </div>
-        <span>JavaScript</span>
-      </div>
-      <div class="skill-icon-card" data-cat="coding">
-        <div class="sic-inner">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"/>
-        </div>
-        <span>React.js</span>
-      </div>
-      <div class="skill-icon-card" data-cat="coding">
-        <div class="sic-inner">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind"/>
-        </div>
-        <span>Tailwind</span>
-      </div>
-      <div class="skill-icon-card" data-cat="coding">
-        <div class="sic-inner">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"/>
-        </div>
-        <span>Git</span>
-      </div>
-      <div class="skill-icon-card" data-cat="coding">
-        <div class="sic-inner">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="filter:invert(1)"/>
-        </div>
-        <span>GitHub</span>
-      </div>
-      <div class="skill-icon-card" data-cat="coding">
-        <div class="sic-inner">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="SASS"/>
-        </div>
-        <span>SASS</span>
-      </div>
-
-      <!-- WORDPRESS -->
-      <div class="skill-icon-card hidden" data-cat="wordpress">
-        <div class="sic-inner">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" alt="WordPress" style="filter:invert(1)"/>
-        </div>
-        <span>WordPress</span>
-      </div>
-      <div class="skill-icon-card hidden" data-cat="wordpress">
-        <div class="sic-inner">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"/>
-        </div>
-        <span>PHP</span>
-      </div>
-      <div class="skill-icon-card hidden" data-cat="wordpress">
-        <div class="sic-inner">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"/>
-        </div>
-        <span>MySQL</span>
-      </div>
-      <div class="skill-icon-card hidden" data-cat="wordpress">
-        <div class="sic-inner">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elementor/elementor-original.svg" alt="Elementor"/>
-        </div>
-        <span>Elementor</span>
-      </div>
-
-      <!-- TOOLS -->
-      <div class="skill-icon-card hidden" data-cat="tools">
-        <div class="sic-inner">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"/>
-        </div>
-        <span>Figma</span>
-      </div>
-      <div class="skill-icon-card hidden" data-cat="tools">
-        <div class="sic-inner">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code"/>
-        </div>
-        <span>VS Code</span>
-      </div>
-      <div class="skill-icon-card hidden" data-cat="tools">
-        <div class="sic-inner">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" alt="NPM"/>
-        </div>
-        <span>NPM</span>
-      </div>
-      <div class="skill-icon-card hidden" data-cat="tools">
-        <div class="sic-inner">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg" alt="Chrome Dev"/>
-        </div>
-        <span>Chrome Dev</span>
-      </div>
-
-      <!-- AI -->
-      <div class="skill-icon-card hidden" data-cat="ai">
-        <div class="sic-inner ai-card" style="background:linear-gradient(135deg,#10a37f,#0d8f6f);">
-          <span class="ai-letter">C</span>
-        </div>
-        <span>ChatGPT</span>
-      </div>
-      <div class="skill-icon-card hidden" data-cat="ai">
-        <div class="sic-inner ai-card" style="background:linear-gradient(135deg,#cc785c,#c96442);">
-          <span class="ai-letter">M</span>
-        </div>
-        <span>Midjourney</span>
-      </div>
-      <div class="skill-icon-card hidden" data-cat="ai">
-        <div class="sic-inner ai-card" style="background:linear-gradient(135deg,#5b6cf8,#8b5cf6);">
-          <span class="ai-letter">Cl</span>
-        </div>
-        <span>Claude AI</span>
-      </div>
-      <div class="skill-icon-card hidden" data-cat="ai">
-        <div class="sic-inner ai-card" style="background:linear-gradient(135deg,#4285f4,#34a853);">
-          <span class="ai-letter">G</span>
-        </div>
-        <span>Gemini</span>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ===== PROJECTS ===== -->
-  <section class="projects" id="projects">
-    <div class="section-header">
-      <p class="section-tag">My Work</p>
-      <h2>Projects</h2>
-    </div>
-    <div class="projects-grid">
-      <div class="project-card">
-        <div class="project-img"><i class="fas fa-laptop-code"></i></div>
-        <div class="project-info">
-          <h3>E-Commerce Website</h3>
-          <p>A fully responsive online store built with React and Tailwind CSS.</p>
-          <div class="project-tags">
-            <span>React</span><span>Tailwind</span><span>JS</span>
+        <div class="stats-row">
+          <div class="stat-card">
+            <span class="stat-num">2+</span>
+            <span class="stat-label">Years Experience</span>
           </div>
-          <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
-      <div class="project-card">
-        <div class="project-img"><i class="fas fa-chart-line"></i></div>
-        <div class="project-info">
-          <h3>Analytics Dashboard</h3>
-          <p>Real-time data dashboard with interactive charts and dark UI.</p>
-          <div class="project-tags">
-            <span>HTML</span><span>CSS</span><span>Chart.js</span>
+          <div class="stat-card">
+            <span class="stat-num">20+</span>
+            <span class="stat-label">Projects Delivered</span>
           </div>
-          <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
-      <div class="project-card">
-        <div class="project-img"><i class="fas fa-mobile-alt"></i></div>
-        <div class="project-info">
-          <h3>Portfolio Website</h3>
-          <p>A modern portfolio with animations and responsive layout.</p>
-          <div class="project-tags">
-            <span>HTML</span><span>CSS</span><span>JS</span>
-          </div>
-          <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
-<!--  -->
-
-
-
-  <!-- ===== CONTACT ===== -->
-  <section class="contact" id="contact">
-    <div class="contact-left">
-      <h2>Contact Us</h2>
-      <p class="contact-desc">I collaborate closely with designers, founders, and product teams to deliver front-end</p>
-      <div class="contact-info">
-        <div class="info-item">
-          <i class="fas fa-phone-alt"></i>
-          <span>+92 312 2166216</span>
-        </div>
-        <div class="info-item">
-          <i class="fas fa-at"></i>
-          <span>syedwaleedali887@gmail.com</span>
-        </div>
-      </div>
-      <!-- World Map SVG -->
-      <div class="map-wrap">
-        <svg class="world-map" viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg">
-          <g fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.08)" stroke-width="0.5">
-            <path d="M120,80 L200,70 L230,90 L250,130 L240,170 L200,190 L170,180 L140,160 L110,140 L100,110 Z"/>
-            <path d="M80,100 L120,90 L130,120 L100,140 L70,130 Z"/>
-            <path d="M200,190 L230,200 L220,230 L195,240 L185,220 Z"/>
-            <path d="M210,260 L250,250 L270,270 L280,310 L270,360 L250,390 L225,400 L200,380 L190,340 L195,300 Z"/>
-            <path d="M440,70 L480,65 L500,80 L510,100 L490,115 L460,120 L440,110 L430,90 Z"/>
-            <path d="M480,65 L520,60 L540,75 L530,95 L510,100 Z"/>
-            <path d="M440,110 L470,115 L475,135 L450,140 L435,125 Z"/>
-            <path d="M450,150 L500,145 L520,160 L530,210 L520,260 L500,300 L475,310 L450,290 L435,250 L430,200 L440,170 Z"/>
-            <path d="M540,60 L650,50 L720,65 L750,90 L740,130 L700,150 L650,160 L590,155 L550,140 L530,110 L535,80 Z"/>
-            <path d="M650,160 L700,155 L720,180 L710,210 L680,220 L650,210 L630,190 Z"/>
-            <path d="M700,90 L760,85 L800,100 L810,130 L790,150 L750,155 L720,140 L700,120 Z"/>
-            <path d="M720,310 L780,300 L820,315 L830,350 L810,380 L770,390 L730,375 L710,345 L715,320 Z"/>
-            <path d="M790,110 L810,105 L820,120 L805,135 L790,130 Z"/>
-            <path d="M270,20 L320,15 L340,35 L330,60 L300,70 L270,55 L255,35 Z"/>
-          </g>
-        </svg>
-        <!-- Pin on Pakistan -->
-        <div class="map-pin">
-          <div class="pin-label">We are here</div>
-          <div class="pin-line"></div>
-          <div class="pin-dot">
-            <div class="pin-pulse"></div>
+          <div class="stat-card">
+            <span class="stat-num">100+</span>
+            <span class="stat-label">Client Satisfaction</span>
           </div>
         </div>
       </div>
-    </div>
-    <!-- RIGHT: Form Card -->
-    <div class="contact-right">
-      <div class="form-card">
-        <div class="form-group">
-          <input type="text" placeholder="Full Name"/>
-          <div class="input-line"></div>
-        </div>
-        <div class="form-group">
-          <input type="email" placeholder="Email Address"/>
-          <div class="input-line"></div>
-        </div>
-        <div class="form-group">
-          <input type="text" placeholder="Company"/>
-          <div class="input-line"></div>
-        </div>
-        <div class="form-group">
-          <textarea rows="4" placeholder="Message"></textarea>
-          <div class="input-line"></div>
-        </div>
-        <button class="btn-send" id="sendBtn">Send</button>
-      </div>
-    </div>
-  </section>
+      <div class="scroll-dot"></div>
+    </section>
 
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
- 
-    <!-- Top Row -->
-    <div class="footer-top">
- 
-      <!-- Left: Text + Description -->
-      <div class="footer-left">
-        <h3>Text</h3>
-        <p>Looking for a Front-End Developer to bring your ideas to life?
-        Let's connect and discuss your project. Looking for a Front-End
-        Developer to bring your ideas to life? Let's connect and discuss
-        your project Looking for a Front-End Developer..</p>
-        <span class="footer-dot"></span>
+    <!-- ===== ABOUT ===== -->
+    <section class="about" id="about">
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p>
+          I'm a Front-End Developer with a strong focus on performance,
+          accessibility, and modern UI development. I specialize in converting
+          designs into clean, maintainable code while ensuring smooth user
+          experiences across all devices.
+        </p>
+        <p>
+          I collaborate closely with designers, founders, and product teams to
+          deliver front-end solutions that support business growth.
+        </p>
       </div>
- 
-      <!-- Right: Social Icons + Links -->
-      <div class="footer-right">
-        <div class="social-icons">
-          <!-- <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <div class="about-img">
+        <div class="img-placeholder">
+          <span><img src="./images/me-2.png" alt="Syed Waleed Ali" /></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="services" id="services">
+      <div class="section-header">
+        <p class="section-tag">What I Offer</p>
+        <h2>My Services</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-code"></i></div>
+          <h3>Web Development</h3>
+          <p>
+            Building fast, responsive, and scalable web applications with clean
+            code.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+          <h3>UI/UX Design</h3>
+          <p>
+            Crafting beautiful, intuitive interfaces that users love to interact
+            with.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+          <h3>Responsive Design</h3>
+          <p>
+            Ensuring pixel-perfect experiences across all devices and screen
+            sizes.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-rocket"></i></div>
+          <h3>Performance Optimization</h3>
+          <p>
+            Speeding up websites and apps for better user experience and SEO.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS & TOOLS ===== -->
+    <section class="skills" id="skills">
+      <div class="section-header">
+        <h2>Skills &amp; Tools</h2>
+      </div>
+      <div class="skills-tabs">
+        <button class="tab-btn active" data-filter="coding">coding</button>
+        <button class="tab-btn" data-filter="wordpress">WordPress</button>
+        <button class="tab-btn" data-filter="tools">Tools</button>
+        <button class="tab-btn" data-filter="ai">Ai</button>
+      </div>
+      <div class="skills-icon-grid">
+        <!-- CODING -->
+        <div class="skill-icon-card" data-cat="coding">
+          <div class="sic-inner">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              alt="HTML5"
+            />
+          </div>
+          <span>HTML5</span>
+        </div>
+        <div class="skill-icon-card" data-cat="coding">
+          <div class="sic-inner">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              alt="CSS3"
+            />
+          </div>
+          <span>CSS3</span>
+        </div>
+        <div class="skill-icon-card" data-cat="coding">
+          <div class="sic-inner">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JavaScript"
+            />
+          </div>
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-icon-card" data-cat="coding">
+          <div class="sic-inner">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+              alt="React"
+            />
+          </div>
+          <span>React.js</span>
+        </div>
+        <div class="skill-icon-card" data-cat="coding">
+          <div class="sic-inner">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+              alt="Tailwind"
+            />
+          </div>
+          <span>Tailwind</span>
+        </div>
+        <div class="skill-icon-card" data-cat="coding">
+          <div class="sic-inner">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+              alt="Git"
+            />
+          </div>
+          <span>Git</span>
+        </div>
+        <div class="skill-icon-card" data-cat="coding">
+          <div class="sic-inner">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+              alt="GitHub"
+              style="filter: invert(1)"
+            />
+          </div>
+          <span>GitHub</span>
+        </div>
+        <div class="skill-icon-card" data-cat="coding">
+          <div class="sic-inner">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
+              alt="SASS"
+            />
+          </div>
+          <span>SASS</span>
+        </div>
+
+        <!-- WORDPRESS -->
+        <div class="skill-icon-card hidden" data-cat="wordpress">
+          <div class="sic-inner">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg"
+              alt="WordPress"
+              style="filter: invert(1)"
+            />
+          </div>
+          <span>WordPress</span>
+        </div>
+        <div class="skill-icon-card hidden" data-cat="wordpress">
+          <div class="sic-inner">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+              alt="PHP"
+            />
+          </div>
+          <span>PHP</span>
+        </div>
+        <div class="skill-icon-card hidden" data-cat="wordpress">
+          <div class="sic-inner">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+              alt="MySQL"
+            />
+          </div>
+          <span>MySQL</span>
+        </div>
+        <div class="skill-icon-card hidden" data-cat="wordpress">
+          <div class="sic-inner">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elementor/elementor-original.svg"
+              alt="Elementor"
+            />
+          </div>
+          <span>Elementor</span>
+        </div>
+
+        <!-- TOOLS -->
+        <div class="skill-icon-card hidden" data-cat="tools">
+          <div class="sic-inner">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+              alt="Figma"
+            />
+          </div>
+          <span>Figma</span>
+        </div>
+        <div class="skill-icon-card hidden" data-cat="tools">
+          <div class="sic-inner">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+              alt="VS Code"
+            />
+          </div>
+          <span>VS Code</span>
+        </div>
+        <div class="skill-icon-card hidden" data-cat="tools">
+          <div class="sic-inner">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg"
+              alt="NPM"
+            />
+          </div>
+          <span>NPM</span>
+        </div>
+        <div class="skill-icon-card hidden" data-cat="tools">
+          <div class="sic-inner">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg"
+              alt="Chrome Dev"
+            />
+          </div>
+          <span>Chrome Dev</span>
+        </div>
+
+        <!-- AI -->
+        <div class="skill-icon-card hidden" data-cat="ai">
+          <div
+            class="sic-inner ai-card"
+            style="background: linear-gradient(135deg, #10a37f, #0d8f6f)"
+          >
+            <span class="ai-letter">C</span>
+          </div>
+          <span>ChatGPT</span>
+        </div>
+        <div class="skill-icon-card hidden" data-cat="ai">
+          <div
+            class="sic-inner ai-card"
+            style="background: linear-gradient(135deg, #cc785c, #c96442)"
+          >
+            <span class="ai-letter">M</span>
+          </div>
+          <span>Midjourney</span>
+        </div>
+        <div class="skill-icon-card hidden" data-cat="ai">
+          <div
+            class="sic-inner ai-card"
+            style="background: linear-gradient(135deg, #5b6cf8, #8b5cf6)"
+          >
+            <span class="ai-letter">Cl</span>
+          </div>
+          <span>Claude AI</span>
+        </div>
+        <div class="skill-icon-card hidden" data-cat="ai">
+          <div
+            class="sic-inner ai-card"
+            style="background: linear-gradient(135deg, #4285f4, #34a853)"
+          >
+            <span class="ai-letter">G</span>
+          </div>
+          <span>Gemini</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="projects" id="projects">
+      <div class="section-header">
+        <p class="section-tag">My Work</p>
+        <h2>Projects</h2>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-img"><i class="fas fa-laptop-code"></i></div>
+          <div class="project-info">
+            <h3>E-Commerce Website</h3>
+            <p>
+              A fully responsive online store built with React and Tailwind CSS.
+            </p>
+            <div class="project-tags">
+              <span>React</span><span>Tailwind</span><span>JS</span>
+            </div>
+            <a href="#" class="project-link"
+              >View Project <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img"><i class="fas fa-chart-line"></i></div>
+          <div class="project-info">
+            <h3>Analytics Dashboard</h3>
+            <p>Real-time data dashboard with interactive charts and dark UI.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>Chart.js</span>
+            </div>
+            <a href="#" class="project-link"
+              >View Project <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img"><i class="fas fa-mobile-alt"></i></div>
+          <div class="project-info">
+            <h3>Portfolio Website</h3>
+            <p>A modern portfolio with animations and responsive layout.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+            <a href="#" class="project-link"
+              >View Project <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact" id="contact">
+      <div class="contact-left">
+        <h2>Contact Us</h2>
+        <p class="contact-desc">
+          I collaborate closely with designers, founders, and product teams to
+          deliver front-end
+        </p>
+        <div class="contact-info">
+          <div class="info-item">
+            <i class="fas fa-phone-alt"></i>
+            <span>+92 312 2166216</span>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-at"></i>
+            <span>syedwaleedali887@gmail.com</span>
+          </div>
+        </div>
+        <!-- World Map SVG -->
+        <div class="map-wrap">
+          <svg
+            class="world-map"
+            viewBox="0 0 1000 500"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g
+              fill="rgba(255,255,255,0.15)"
+              stroke="rgba(255,255,255,0.08)"
+              stroke-width="0.5"
+            >
+              <path
+                d="M120,80 L200,70 L230,90 L250,130 L240,170 L200,190 L170,180 L140,160 L110,140 L100,110 Z"
+              />
+              <path d="M80,100 L120,90 L130,120 L100,140 L70,130 Z" />
+              <path d="M200,190 L230,200 L220,230 L195,240 L185,220 Z" />
+              <path
+                d="M210,260 L250,250 L270,270 L280,310 L270,360 L250,390 L225,400 L200,380 L190,340 L195,300 Z"
+              />
+              <path
+                d="M440,70 L480,65 L500,80 L510,100 L490,115 L460,120 L440,110 L430,90 Z"
+              />
+              <path d="M480,65 L520,60 L540,75 L530,95 L510,100 Z" />
+              <path d="M440,110 L470,115 L475,135 L450,140 L435,125 Z" />
+              <path
+                d="M450,150 L500,145 L520,160 L530,210 L520,260 L500,300 L475,310 L450,290 L435,250 L430,200 L440,170 Z"
+              />
+              <path
+                d="M540,60 L650,50 L720,65 L750,90 L740,130 L700,150 L650,160 L590,155 L550,140 L530,110 L535,80 Z"
+              />
+              <path
+                d="M650,160 L700,155 L720,180 L710,210 L680,220 L650,210 L630,190 Z"
+              />
+              <path
+                d="M700,90 L760,85 L800,100 L810,130 L790,150 L750,155 L720,140 L700,120 Z"
+              />
+              <path
+                d="M720,310 L780,300 L820,315 L830,350 L810,380 L770,390 L730,375 L710,345 L715,320 Z"
+              />
+              <path d="M790,110 L810,105 L820,120 L805,135 L790,130 Z" />
+              <path
+                d="M270,20 L320,15 L340,35 L330,60 L300,70 L270,55 L255,35 Z"
+              />
+            </g>
+          </svg>
+          <!-- Pin on Pakistan -->
+          <div class="map-pin">
+            <div class="pin-label">We are here</div>
+            <div class="pin-line"></div>
+            <div class="pin-dot">
+              <div class="pin-pulse"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- RIGHT: Form Card -->
+      <div class="contact-right">
+        <div class="form-card">
+          <div class="form-group">
+            <input type="text" placeholder="Full Name" />
+            <div class="input-line"></div>
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email Address" />
+            <div class="input-line"></div>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Company" />
+            <div class="input-line"></div>
+          </div>
+          <div class="form-group">
+            <textarea rows="4" placeholder="Message"></textarea>
+            <div class="input-line"></div>
+          </div>
+          <button class="btn-send" id="sendBtn">Send</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <!-- Top Row -->
+      <div class="footer-top">
+        <!-- Left: Text + Description -->
+        <div class="footer-left">
+          <h3>Syed Waleed Ali </h3>
+          <p>
+            Looking for a Front-End Developer to bring your
+            ideas to life? Let's connect and discuss your project.
+          </p>
+          <span class="footer-dot"></span>
+        </div>
+
+        <!-- Right: Social Icons + Links -->
+        <div class="footer-right">
+          <div class="social-icons">
+            <!-- <a href="#"><i class="fab fa-facebook-f"></i></a>
           <a href="#" class="active"><i class="fab fa-instagram"></i></a>
           <a href="#"><i class="fab fa-x-twitter"></i></a>
           <a href="#"><i class="fab fa-whatsapp"></i></a> -->
-           <!-- GitHub -->
-    <a href="https://github.com/SyedWaleedAli71"
-       target="_blank"
-       rel="noopener noreferrer"
-       aria-label="GitHub">
-      <i class="fab fa-github"></i>
-    </a>
+            <!-- GitHub -->
+            <a
+              href="https://github.com/SyedWaleedAli71"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
 
-    <!-- LinkedIn -->
-    <a href="https://www.linkedin.com/in/syed-waleed-ali-04b29b275/"
-       target="_blank"
-       rel="noopener noreferrer"
-       aria-label="LinkedIn">
-      <i class="fab fa-linkedin-in"></i>
-    </a>
+            <!-- LinkedIn -->
+            <a
+              href="https://www.linkedin.com/in/syed-waleed-ali-04b29b275/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
 
-    <!-- WhatsApp -->
-    <a href="https://wa.me/923122166216"
-       target="_blank"
-       rel="noopener noreferrer"
-       aria-label="WhatsApp">
-      <i class="fab fa-whatsapp"></i>
-    </a>
-        </div>
-        <div class="footer-links">
-          <p class="links-heading">Links:</p>
-          <nav>
-            <a href="#">Home</a>
-            <a href="#">Services</a>
-            <a href="#">Skills</a>
-            <a href="#">Projects</a>
-            <a href="#">About</a>
-            <a href="#">Contact Us</a>
-          </nav>
+            <!-- WhatsApp -->
+            <a
+              href="https://wa.me/923122166216"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+            >
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+          <div class="footer-links">
+            <p class="links-heading">Links:</p>
+            <nav>
+              <a href="#">Home</a>
+              <a href="#">Services</a>
+              <a href="#">Skills</a>
+              <a href="#">Projects</a>
+              <a href="#">About</a>
+              <a href="#">Contact Us</a>
+            </nav>
+          </div>
         </div>
       </div>
- 
-    </div>
- 
-    <!-- Marquee PORTFOLIO Text -->
-    <div class="marquee-wrap">
-      <div class="marquee-track">
-        <span>PORTFOLIO</span>
-        <span>PORTFOLIO</span>
-        <span>PORTFOLIO</span>
-      </div>
-    </div>
- 
-    <!-- Bottom Copyright -->
-    <div class="footer-bottom">
-      <p>© 2026 Zain Dev. All Rights Reserved.</p>
-    </div>
- 
-  </footer>
 
-  <script src="app.js"></script>
-</body>
+      <!-- Marquee PORTFOLIO Text -->
+      <div class="marquee-wrap">
+        <div class="marquee-track">
+          <span>PORTFOLIO</span>
+          <span>PORTFOLIO</span>
+          <span>PORTFOLIO</span>
+        </div>
+      </div>
+
+      <!-- Bottom Copyright -->
+      <div class="footer-bottom">
+        <p>© 2026 Syed Waleed Ali. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
 </html>
