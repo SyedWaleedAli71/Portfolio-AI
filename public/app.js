@@ -59,6 +59,7 @@ tabBtns.forEach(btn => {
     // Active tab
     tabBtns.forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
+    tabBtns.forEach(b => b.setAttribute('aria-pressed', String(b === btn)));
 
     const filter = btn.getAttribute('data-filter');
 
@@ -71,6 +72,29 @@ tabBtns.forEach(btn => {
     });
   });
 });
+
+// ============================================
+//  PROJECTS - Expand and collapse additional projects
+// ============================================
+const projectsToggle = document.querySelector('.projects-toggle');
+const additionalProjects = document.querySelectorAll('.additional-project');
+
+if (projectsToggle) {
+  projectsToggle.addEventListener('click', () => {
+    const expanded = projectsToggle.getAttribute('aria-expanded') === 'true';
+    additionalProjects.forEach(card => {
+      card.hidden = expanded;
+      if (!expanded) {
+        card.classList.remove('visible');
+        requestAnimationFrame(() => card.classList.add('visible'));
+      }
+    });
+    projectsToggle.setAttribute('aria-expanded', String(!expanded));
+    projectsToggle.innerHTML = expanded
+      ? 'All Projects <i class="fas fa-arrow-down" aria-hidden="true"></i>'
+      : 'Show Less <i class="fas fa-arrow-up" aria-hidden="true"></i>';
+  });
+}
 
 // ============================================
 //  FADE-UP ANIMATION (IntersectionObserver)
